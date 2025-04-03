@@ -2118,7 +2118,7 @@ textarea.input {
   left: -5.625rem;
   width: 19.125rem;
   height: 19.125rem;
-  background-image: url("@img/hat.png");
+  background-image: url("../images/hat.png");
 }
 @media (max-width: 99.99875em) {
   .mainstream::before {
@@ -2157,7 +2157,7 @@ textarea.input {
   height: 40.625rem;
   top: -3%;
   right: 72%;
-  background-image: url("@img/hero/decor.svg");
+  background-image: url("../images/hero/decor.svg");
 }
 @media (max-width: 87.49875em) {
   .hero::before {
@@ -2339,7 +2339,7 @@ textarea.input {
   right: 0;
   width: 12.8125rem;
   height: 22.125rem;
-  background-image: url("@img/bag.png");
+  background-image: url("../images/bag.png");
 }
 @media (max-width: 99.99875em) {
   .top::after {
@@ -2419,7 +2419,7 @@ textarea.input {
   left: -0.125rem;
   width: 8.4375rem;
   height: 17.8125rem;
-  background-image: url("@img/photo.png");
+  background-image: url("../images/photo.png");
 }
 @media (max-width: 99.99875em) {
   .reviews::before {
@@ -2479,7 +2479,7 @@ textarea.input {
   width: 46%;
   height: 130%;
   background-position: center bottom;
-  background-image: url("@img/subscribe/image.png");
+  background-image: url("../images/subscribe/image.png");
 }
 @media (max-width: 87.49875em) {
   .subscribe__container::after {
@@ -2605,7 +2605,7 @@ textarea.input {
   left: 0;
   width: 11.9375rem;
   height: 17.8125rem;
-  background-image: url("@img/maps.png");
+  background-image: url("../images/maps.png");
 }
 @media (max-width: 99.99875em) {
   .countries::before {
