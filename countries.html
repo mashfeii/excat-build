@@ -2,16 +2,18 @@
 <html lang="ru">
 
 <head>
-  <title>Главная</title>
-  <meta charset="UTF-8">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="assets/css/style.css?_v=20250405043553">
-  <link rel="stylesheet" href="assets/css/header.css?_v=20250405043553">
-  <link rel="stylesheet" href="assets/css/footer.css?_v=20250405043553">
-  <link rel="stylesheet" href="assets/css/slider.css?_v=20250405043553">
-  <link rel="stylesheet" href="assets/css/home.css?_v=20250405043553">
-  <link rel="shortcut icon" href="favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Экскурсии в России</title>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="assets/css/style.css?_v=20250405043553" />
+  <link rel="stylesheet" href="assets/css/header.css?_v=20250405043553" />
+  <link rel="stylesheet" href="assets/css/footer.css?_v=20250405043553" />
+  <link rel="stylesheet" href="assets/css/slider.css?_v=20250405043553" />
+  <link rel="stylesheet" href="assets/css/breadcrumb.css?_v=20250405043553" />
+  <link rel="stylesheet" href="assets/css/pagination.css?_v=20250405043553" />
+  <link rel="stylesheet" href="assets/css/countries.css?_v=20250405043553" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 
 <body>
@@ -110,50 +112,38 @@
     </header>
 
     <main class="page">
-      <section class="page__hero hero">
-        <div class="hero__container">
-          <div class="hero__content">
-            <h1 class="hero__title main-title">
-              Каталог экскурсий <br>
-              <span class="highlight">по всему миру</span>
-              <svg class="hero__title-icon" width="48" height="48">
-                <use xlink:href="./assets/icons/icons.svg#map" />
-              </svg>
-            </h1>
-            <p class="hero__description _f-subtitle">
-              Здесь вы сможете легко и быстро найти идеальные экскурсии в самых
-              интересных уголках планеты. Мы предлагаем широкий выбор туров, от
-              культурных и исторических до приключенческих и гастрономических.
-              Сравнивайте предложения, читайте отзывы и выбирайте лучшие варианты для
-              незабываемых путешествий.
+      <nav aria-label="Breadcrumb" class="breadcrumb container" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="#" class="breadcrumb__link" itemprop="item">
+              <span itemprop="name">Главная</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span class="breadcrumb__text" aria-current="page" itemprop="name">Россия</span>
+            <meta itemprop="position" content="2" />
+            <meta itemprop="item" content="https://site.ru/current-page" />
+          </li>
+        </ol>
+      </nav>
+
+      <section class="page__text text text--center container">
+        <h1 class="text__title main-title">
+          Экскурсии <span class="highlight">в России</span>
+        </h1>
+        <div class="text__body">
+          <div class="text__block">
+            <p>
+              Всего в России 2876 экскурсий в 280 городах. Бронирование
+              доступно на февраль и март 2025 года, цены начинаются от 2 000
+              рублей за группу. В каждой карточке мероприятия содержится
+              детальное описание маршрута, фото и отзывы путешественников.
             </p>
-            <div class="hero__cards">
-              <div class="hero__card">
-                <svg class="hero__card-icon" width="30" height="30">
-                  <use xlink:href="./assets/icons/icons.svg#backpack" />
-                </svg>
-                <strong class="hero__card-title _f-h4">23 847 экскурсий</strong>
-              </div>
-              <div class="hero__card">
-                <svg class="hero__card-icon" width="30" height="30">
-                  <use xlink:href="./assets/icons/icons.svg#city" />
-                </svg>
-                <strong class="hero__card-title _f-h4">905 городов</strong>
-              </div>
-              <div class="hero__card">
-                <svg class="hero__card-icon" width="30" height="30">
-                  <use xlink:href="./assets/icons/icons.svg#flag" />
-                </svg>
-                <strong class="hero__card-title _f-h4">110 стран</strong>
-              </div>
-            </div>
-          </div>
-          <div class="hero__image-ibg">
-            <picture><source srcset="./assets/images/hero/image.webp" type="image/webp"><img src="./assets/images/hero/image.png" alt=""></picture>
+            <p>Записаться на экскурсию можно без предоплаты.</p>
           </div>
         </div>
       </section>
-
       <section class="page__mainstream mainstream">
         <div class="mainstream__container container">
           <h2 class="mainstream__title title">Популярные города</h2>
@@ -234,98 +224,6 @@
         </div>
       </section>
 
-      <section class="page__gids gids container">
-        <div class="gids__header block-header">
-          <h2 class="block-header__title title">Лучшие гиды</h2>
-          <span class="block-header__label">
-            <svg class="block-header__label-icon" width="20" height="20">
-              <use xlink:href="./assets/icons/icons.svg#mark" />
-            </svg>
-            <span class="block-header__label-text">7 532 экскурсовода проведут интересные экскурсии</span>
-          </span>
-        </div>
-        <div class="gids__body">
-          <a href="javascript:void(0);" class="gids__card card-gids">
-            <div class="card-gids__image">
-              <picture><source srcset="./assets/images/gids/1.webp" type="image/webp"><img src="./assets/images/gids/1.png" alt="" /></picture>
-            </div>
-            <h3 class="card-gids__title _f-h4">Александр</h3>
-            <p class="card-gids__text">Стаж работы: 14 лет</p>
-            <div class="card-gids__city">
-              <svg class="card-gids__city-icon" width="18" height="18">
-                <use xlink:href="./assets/icons/icons.svg#location" />
-              </svg>
-              <span class="card-gids__city-text">Мурманск</span>
-            </div>
-          </a>
-          <a href="javascript:void(0);" class="gids__card card-gids">
-            <div class="card-gids__image">
-              <picture><source srcset="./assets/images/gids/2.webp" type="image/webp"><img src="./assets/images/gids/2.png" alt="" /></picture>
-            </div>
-            <h3 class="card-gids__title _f-h4">Виталий</h3>
-            <p class="card-gids__text">Стаж работы: 16 лет</p>
-            <div class="card-gids__city">
-              <svg class="card-gids__city-icon" width="18" height="18">
-                <use xlink:href="./assets/icons/icons.svg#location" />
-              </svg>
-              <span class="card-gids__city-text">Санкт-Петербург</span>
-            </div>
-          </a>
-          <a href="javascript:void(0);" class="gids__card card-gids">
-            <div class="card-gids__image">
-              <picture><source srcset="./assets/images/gids/3.webp" type="image/webp"><img src="./assets/images/gids/3.png" alt="" /></picture>
-            </div>
-            <h3 class="card-gids__title _f-h4">Олег</h3>
-            <p class="card-gids__text">Стаж работы: 5 лет</p>
-            <div class="card-gids__city">
-              <svg class="card-gids__city-icon" width="18" height="18">
-                <use xlink:href="./assets/icons/icons.svg#location" />
-              </svg>
-              <span class="card-gids__city-text">Москва</span>
-            </div>
-          </a>
-          <a href="javascript:void(0);" class="gids__card card-gids">
-            <div class="card-gids__image">
-              <picture><source srcset="./assets/images/gids/4.webp" type="image/webp"><img src="./assets/images/gids/4.png" alt="" /></picture>
-            </div>
-            <h3 class="card-gids__title _f-h4">Даниил</h3>
-            <p class="card-gids__text">Стаж работы: 3 года</p>
-            <div class="card-gids__city">
-              <svg class="card-gids__city-icon" width="18" height="18">
-                <use xlink:href="./assets/icons/icons.svg#location" />
-              </svg>
-              <span class="card-gids__city-text">Иркутск</span>
-            </div>
-          </a>
-          <a href="javascript:void(0);" class="gids__card card-gids">
-            <div class="card-gids__image">
-              <picture><source srcset="./assets/images/gids/5.webp" type="image/webp"><img src="./assets/images/gids/5.png" alt="" /></picture>
-            </div>
-            <h3 class="card-gids__title _f-h4">Виолетта</h3>
-            <p class="card-gids__text">Стаж работы: 8 лет</p>
-            <div class="card-gids__city">
-              <svg class="card-gids__city-icon" width="18" height="18">
-                <use xlink:href="./assets/icons/icons.svg#location" />
-              </svg>
-              <span class="card-gids__city-text">Казань</span>
-            </div>
-          </a>
-          <a href="javascript:void(0);" class="gids__card card-gids">
-            <div class="card-gids__image">
-              <picture><source srcset="./assets/images/gids/6.webp" type="image/webp"><img src="./assets/images/gids/6.png" alt="" /></picture>
-            </div>
-            <h3 class="card-gids__title _f-h4">Дмитрий</h3>
-            <p class="card-gids__text">Стаж работы: 21 год</p>
-            <div class="card-gids__city">
-              <svg class="card-gids__city-icon" width="18" height="18">
-                <use xlink:href="./assets/icons/icons.svg#location" />
-              </svg>
-              <span class="card-gids__city-text">Иваново</span>
-            </div>
-          </a>
-        </div>
-      </section>
-
       <section class="page__top top">
         <div class="top__container container">
           <h2 class="top__title title">Топ экскурсий</h2>
@@ -335,9 +233,7 @@
                 <picture><source srcset="./assets/images/top/1.webp" type="image/webp"><img src="./assets/images/top/1.jpg" alt="" itemprop="url contentUrl" /></picture>
                 <meta itemprop="width" content="430" />
                 <meta itemprop="height" content="280" />
-                <div class="top-card__label">
-                  Скидка 10%
-                </div>
+                <div class="top-card__label">Скидка 10%</div>
               </div>
 
               <div class="top-card__info info-row">
@@ -369,12 +265,13 @@
               </div>
 
               <h3 class="top-card__title _f-h3 _multiline-shorten" itemprop="name">
-                Путешествие в Балтийск, Светлогорск и Янтарный в небольшой группе
+                Путешествие в Балтийск, Светлогорск и Янтарный в небольшой
+                группе
               </h3>
 
               <p class="top-card__text _multiline-shorten" itemprop="description">
-                Необыкновенное путешествие по городам Самбийского полуострова. Вы
-                вдохновитесь текст текст текст текст продолжение
+                Необыкновенное путешествие по городам Самбийского полуострова.
+                Вы вдохновитесь текст текст текст текст продолжение
               </p>
 
               <div class="top-card__benefits">
@@ -444,8 +341,8 @@
               </h3>
 
               <p class="top-card__text _multiline-shorten" itemprop="description">
-                Необыкновенное путешествие по городам Самбийского полуострова. Вы
-                вдохновитесь текст текст текст текст продолжение
+                Необыкновенное путешествие по городам Самбийского полуострова.
+                Вы вдохновитесь текст текст текст текст продолжение
               </p>
 
               <div class="top-card__benefits">
@@ -504,12 +401,13 @@
               </div>
 
               <h3 class="top-card__title _f-h3 _multiline-shorten" itemprop="name">
-                Путешествие в Балтийск, Светлогорск и Янтарный в небольшой группе
+                Путешествие в Балтийск, Светлогорск и Янтарный в небольшой
+                группе
               </h3>
 
               <p class="top-card__text _multiline-shorten" itemprop="description">
-                Необыкновенное путешествие по городам Самбийского полуострова. Вы
-                вдохновитесь текст текст текст текст продолжение
+                Необыкновенное путешествие по городам Самбийского полуострова.
+                Вы вдохновитесь текст текст текст текст продолжение
               </p>
 
               <div class="top-card__benefits">
@@ -574,8 +472,8 @@
               </h3>
 
               <p class="top-card__text _multiline-shorten" itemprop="description">
-                Необыкновенное путешествие по городам Самбийского полуострова. Вы
-                вдохновитесь текст текст текст текст продолжение
+                Необыкновенное путешествие по городам Самбийского полуострова.
+                Вы вдохновитесь текст текст текст текст продолжение
               </p>
 
               <div class="top-card__benefits">
@@ -634,12 +532,13 @@
               </div>
 
               <h3 class="top-card__title _f-h3 _multiline-shorten" itemprop="name">
-                Путешествие в Балтийск, Светлогорск и Янтарный в небольшой группе
+                Путешествие в Балтийск, Светлогорск и Янтарный в небольшой
+                группе
               </h3>
 
               <p class="top-card__text _multiline-shorten" itemprop="description">
-                Необыкновенное путешествие по городам Самбийского полуострова. Вы
-                вдохновитесь текст текст текст текст продолжение
+                Необыкновенное путешествие по городам Самбийского полуострова.
+                Вы вдохновитесь текст текст текст текст продолжение
               </p>
 
               <div class="top-card__benefits">
@@ -704,8 +603,8 @@
               </h3>
 
               <p class="top-card__text _multiline-shorten" itemprop="description">
-                Необыкновенное путешествие по городам Самбийского полуострова. Вы
-                вдохновитесь текст текст текст текст продолжение
+                Необыкновенное путешествие по городам Самбийского полуострова.
+                Вы вдохновитесь текст текст текст текст продолжение
               </p>
 
               <div class="top-card__benefits">
@@ -729,9 +628,38 @@
               <meta itemprop="eventStatus" content="https://schema.org/EventScheduled" />
             </a>
           </div>
+          <nav aria-label="Навигация по страницам" class="top__pagination pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="javascript:void(0);" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="javascript:void(0);" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item" aria-current="page">
+                <a href="javascript:void(0);" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="javascript:void(0);" class="pagination__link">4</a>
+              </li>
+              <li class="pagination__item">
+                <a href="javascript:void(0);" class="pagination__link">5</a>
+              </li>
+              <li class="pagination__divider" aria-hidden="true">
+                <span>...</span>
+              </li>
+              <li class="pagination__item">
+                <a href="javascript:void(0);" class="pagination__link">145</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="top__link-wrapper link-wrapper">
+            <button data-show-more class="reviews__link button button--secondary">
+              Читать все отзывы
+            </button>
+          </div>
         </div>
       </section>
-
       <section class="page__opportunities opportunities">
         <div class="opportunities__container container">
           <div class="opportunities__item">
@@ -1023,6 +951,296 @@
         </div>
       </section>
 
+      <section class="page__leaders leaders">
+        <div class="leaders__container container">
+          <div class="leaders__header block-header">
+            <h2 class="block-header__title title">
+              Лучшие экскурсионные гиды России
+            </h2>
+            <span class="block-header__label">
+              <svg class="block-header__label-icon" width="20" height="20">
+                <use xlink:href="./assets/icons/icons.svg#mark" />
+              </svg>
+              <span class="block-header__label-text">2 847 экскурсоводов проведут интересные экскурсии</span>
+            </span>
+          </div>
+          <div class="leaders__body">
+            <a href="javascript:void(0);" class="leaders__item item-leaders">
+              <div class="item-leaders__image">
+                <picture><source srcset="./assets/images/leaders/1.webp" type="image/webp"><img src="./assets/images/leaders/1.jpg" alt="" /></picture>
+              </div>
+              <div class="item-leaders__content">
+                <h3 class="item-leaders__title _f-h4">Международная команда гидов</h3>
+                <div class="item-leaders__info info-row">
+                  <div class="info-row__block" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#location" />
+                    </svg>
+                    <span class="info-row__title" itemprop="name">Мурманск</span>
+                    <meta itemprop="address" content="Мурманск, Россия" />
+                  </div>
+                  <div class="info-row__block" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-stars)">
+                      <use xlink:href="./assets/icons/icons.svg#full-star" />
+                    </svg>
+                    <span class="info-row__title">
+                      <span itemprop="ratingValue">5.0</span>
+                      <meta itemprop="bestRating" content="5" />
+                      <meta itemprop="reviewCount" content="149" />
+                    </span>
+                  </div>
+                  <div class="info-row__block">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#time" />
+                    </svg>
+                    <span class="info-row__title">Среднее время ответа 10 минут</span>
+                  </div>
+                  <div class="info-row__block _mobile-hidden">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#backpack" />
+                    </svg>
+                    <span class="info-row__title">33 экскурсии</span>
+                  </div>
+                </div>
+                <div class="item-leaders__text-wrapper" data-truncate-block="330">
+                  <div class="item-leaders__text">
+                    Работаем с 2005 года. В нашей команде 5 высококлассных гидов. Наши
+                    экскурсии не про легенды и факты из Википедии: мы расскажем о
+                    современных реалиях, жизни, достижениях и проблемах
+                    Калининградской области. Мы показываем то, что действительно
+                    заслуживает внимания и восхищает. На экскурсии мы поделимся
+                    многолетним опытом жизни в любимом регионе, посоветуем
+                    интереснейшие места и поможем вам спланировать лучший отпуск в
+                    Калининградской области.
+                  </div>
+                  <button type="button" class="item-leaders__button arrow-button">
+                    <span class="arrow-button__text">Раскрыть описание</span>
+                    <svg class="arrow-button__icon" width="20" height="20">
+                      <use xlink:href="./assets/icons/icons.svg#arrow" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="item-leaders__mobile-actions">
+                  <span class="item-leaders__mobile-button button"> Подробнее </span>
+                  <div class="info-row">
+                    <div class="info-row__block">
+                      <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                        <use xlink:href="./assets/icons/icons.svg#backpack" />
+                      </svg>
+                      <span class="info-row__title">33 экскурсии</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="leaders__item item-leaders">
+              <div class="item-leaders__image">
+                <picture><source srcset="./assets/images/leaders/2.webp" type="image/webp"><img src="./assets/images/leaders/2.jpg" alt="" /></picture>
+              </div>
+              <div class="item-leaders__content">
+                <h3 class="item-leaders__title _f-h4">Межгородская команда гидов Российской Федерации</h3>
+                <div class="item-leaders__info info-row">
+                  <div class="info-row__block" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#location" />
+                    </svg>
+                    <span class="info-row__title" itemprop="name">Мурманск</span>
+                    <meta itemprop="address" content="Мурманск, Россия" />
+                  </div>
+                  <div class="info-row__block" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-stars)">
+                      <use xlink:href="./assets/icons/icons.svg#full-star" />
+                    </svg>
+                    <span class="info-row__title">
+                      <span itemprop="ratingValue">5.0</span>
+                      <meta itemprop="bestRating" content="5" />
+                      <meta itemprop="reviewCount" content="149" />
+                    </span>
+                  </div>
+                  <div class="info-row__block">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#time" />
+                    </svg>
+                    <span class="info-row__title">Среднее время ответа 10 минут</span>
+                  </div>
+                  <div class="info-row__block _mobile-hidden">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#backpack" />
+                    </svg>
+                    <span class="info-row__title">33 экскурсии</span>
+                  </div>
+                </div>
+                <div class="item-leaders__text-wrapper" data-truncate-block="330">
+                  <div class="item-leaders__text">
+                    Работаем с 2005 года. В нашей команде 5 высококлассных гидов. Наши
+                    экскурсии не про легенды и факты из Википедии: мы расскажем о
+                    современных реалиях, жизни, достижениях и проблемах
+                    Калининградской области. Мы показываем то, что действительно
+                    заслуживает внимания и восхищает. На экскурсии мы поделимся
+                    многолетним опытом жизни в любимом регионе, посоветуем
+                    интереснейшие места и поможем вам спланировать лучший отпуск в
+                    Калининградской области.
+                  </div>
+                  <button type="button" class="item-leaders__button arrow-button">
+                    <span class="arrow-button__text">Раскрыть описание</span>
+                    <svg class="arrow-button__icon" width="20" height="20">
+                      <use xlink:href="./assets/icons/icons.svg#arrow" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="item-leaders__mobile-actions">
+                  <span class="item-leaders__mobile-button button"> Подробнее </span>
+                  <div class="info-row">
+                    <div class="info-row__block">
+                      <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                        <use xlink:href="./assets/icons/icons.svg#backpack" />
+                      </svg>
+                      <span class="info-row__title">33 экскурсии</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="leaders__item item-leaders">
+              <div class="item-leaders__image">
+                <picture><source srcset="./assets/images/leaders/2.webp" type="image/webp"><img src="./assets/images/leaders/2.jpg" alt="" /></picture>
+              </div>
+              <div class="item-leaders__content">
+                <h3 class="item-leaders__title _f-h4">Межгородская команда гидов Российской Федерации</h3>
+                <div class="item-leaders__info info-row">
+                  <div class="info-row__block" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#location" />
+                    </svg>
+                    <span class="info-row__title" itemprop="name">Мурманск</span>
+                    <meta itemprop="address" content="Мурманск, Россия" />
+                  </div>
+                  <div class="info-row__block" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-stars)">
+                      <use xlink:href="./assets/icons/icons.svg#full-star" />
+                    </svg>
+                    <span class="info-row__title">
+                      <span itemprop="ratingValue">5.0</span>
+                      <meta itemprop="bestRating" content="5" />
+                      <meta itemprop="reviewCount" content="149" />
+                    </span>
+                  </div>
+                  <div class="info-row__block">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#time" />
+                    </svg>
+                    <span class="info-row__title">Среднее время ответа 10 минут</span>
+                  </div>
+                  <div class="info-row__block _mobile-hidden">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#backpack" />
+                    </svg>
+                    <span class="info-row__title">33 экскурсии</span>
+                  </div>
+                </div>
+                <div class="item-leaders__text-wrapper" data-truncate-block="330">
+                  <div class="item-leaders__text">
+                    Работаем с 2005 года. В нашей команде 5 высококлассных гидов. Наши
+                    экскурсии не про легенды и факты из Википедии: мы расскажем о
+                    современных реалиях, жизни, достижениях и проблемах
+                    Калининградской области. Мы показываем то, что действительно
+                    заслуживает внимания и восхищает. На экскурсии мы поделимся
+                    многолетним опытом жизни в любимом регионе, посоветуем
+                    интереснейшие места и поможем вам спланировать лучший отпуск в
+                    Калининградской области.
+                  </div>
+                  <button type="button" class="item-leaders__button arrow-button">
+                    <span class="arrow-button__text">Раскрыть описание</span>
+                    <svg class="arrow-button__icon" width="20" height="20">
+                      <use xlink:href="./assets/icons/icons.svg#arrow" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="item-leaders__mobile-actions">
+                  <span class="item-leaders__mobile-button button"> Подробнее </span>
+                  <div class="info-row">
+                    <div class="info-row__block">
+                      <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                        <use xlink:href="./assets/icons/icons.svg#backpack" />
+                      </svg>
+                      <span class="info-row__title">33 экскурсии</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="leaders__item item-leaders">
+              <div class="item-leaders__image">
+                <picture><source srcset="./assets/images/leaders/2.webp" type="image/webp"><img src="./assets/images/leaders/2.jpg" alt="" /></picture>
+              </div>
+              <div class="item-leaders__content">
+                <h3 class="item-leaders__title _f-h4">Межгородская команда гидов Российской Федерации</h3>
+                <div class="item-leaders__info info-row">
+                  <div class="info-row__block" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#location" />
+                    </svg>
+                    <span class="info-row__title" itemprop="name">Мурманск</span>
+                    <meta itemprop="address" content="Мурманск, Россия" />
+                  </div>
+                  <div class="info-row__block" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-stars)">
+                      <use xlink:href="./assets/icons/icons.svg#full-star" />
+                    </svg>
+                    <span class="info-row__title">
+                      <span itemprop="ratingValue">5.0</span>
+                      <meta itemprop="bestRating" content="5" />
+                      <meta itemprop="reviewCount" content="149" />
+                    </span>
+                  </div>
+                  <div class="info-row__block">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#time" />
+                    </svg>
+                    <span class="info-row__title">Среднее время ответа 10 минут</span>
+                  </div>
+                  <div class="info-row__block _mobile-hidden">
+                    <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                      <use xlink:href="./assets/icons/icons.svg#backpack" />
+                    </svg>
+                    <span class="info-row__title">33 экскурсии</span>
+                  </div>
+                </div>
+                <div class="item-leaders__text-wrapper" data-truncate-block="330">
+                  <div class="item-leaders__text">
+                    Работаем с 2005 года. В нашей команде 5 высококлассных гидов. Наши
+                    экскурсии не про легенды и факты из Википедии: мы расскажем о
+                    современных реалиях, жизни, достижениях и проблемах
+                    Калининградской области. Мы показываем то, что действительно
+                    заслуживает внимания и восхищает. На экскурсии мы поделимся
+                    многолетним опытом жизни в любимом регионе, посоветуем
+                    интереснейшие места и поможем вам спланировать лучший отпуск в
+                    Калининградской области.
+                  </div>
+                  <button type="button" class="item-leaders__button arrow-button">
+                    <span class="arrow-button__text">Раскрыть описание</span>
+                    <svg class="arrow-button__icon" width="20" height="20">
+                      <use xlink:href="./assets/icons/icons.svg#arrow" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="item-leaders__mobile-actions">
+                  <span class="item-leaders__mobile-button button"> Подробнее </span>
+                  <div class="info-row">
+                    <div class="info-row__block">
+                      <svg class="info-row__icon" width="18" height="18" style="fill: var(--clr-main-blue)">
+                        <use xlink:href="./assets/icons/icons.svg#backpack" />
+                      </svg>
+                      <span class="info-row__title">33 экскурсии</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="page__attractions attractions container">
         <div class="attractions__header block-header">
           <h2 class="block-header__title title">Достопримечательности</h2>
@@ -1030,7 +1248,8 @@
             <svg class="block-header__label-icon" width="20" height="20">
               <use xlink:href="./assets/icons/icons.svg#mark" />
             </svg>
-            <span class="block-header__label-text">Лучшие и интересные места во всех городах мира с фотографиями</span>
+            <span class="block-header__label-text">Лучшие и интересные места во всех городах мира с
+              фотографиями</span>
           </span>
         </div>
         <div class="attractions__body grid grid--triple">
@@ -1119,69 +1338,12 @@
             </span>
           </a>
         </div>
-      </section>
-
-      <section class="page__subscribe subscribe container">
-        <div class="subscribe__container">
-          <div class="subscribe__body">
-            <h2 class="subscribe__title _f-h2">
-              Подпишитесь <span class="highlight">на новые экскурсии</span>
-            </h2>
-            <p class="subscribe__text _f-subtitle">
-              Подписывайтесь на нашу еженедельную рассылку, чтобы быть в курсе самых
-              интересных новинок, выгодных предложений, масштабных распродаж и
-              удивительных акций!
-            </p>
-            <div class="subscribe__benefits">
-              <div class="subscribe__benefit">
-                <div class="subscribe__benefit-image">
-                  <svg class="subscribe__benefit-icon" width="20" height="20">
-                    <use xlink:href="./assets/icons/icons.svg#excursion-list" />
-                  </svg>
-                </div>
-                <span class="subscribe__benefit-text">
-                  Подборка новых экскурсий 1 раз в неделю
-                </span>
-              </div>
-              <div class="subscribe__benefit">
-                <div class="subscribe__benefit-image">
-                  <svg class="subscribe__benefit-icon" width="20" height="20">
-                    <use xlink:href="./assets/icons/icons.svg#int-exc" />
-                  </svg>
-                </div>
-                <span class="subscribe__benefit-text">
-                  Только самые интересные предложения
-                </span>
-              </div>
-              <div class="subscribe__benefit">
-                <div class="subscribe__benefit-image">
-                  <svg class="subscribe__benefit-icon" width="20" height="20">
-                    <use xlink:href="./assets/icons/icons.svg#no-exc" />
-                  </svg>
-                </div>
-                <span class="subscribe__benefit-text">
-                  Отписаться можно <br />
-                  в один клик
-                </span>
-              </div>
-            </div>
-            <form action="#" class="subscribe__form form">
-              <div class="form__row">
-                <input type="email" required name="email" placeholder="Адрес электронной почты" class="input" />
-                <input type="submit" value="Подписаться" class="button" />
-              </div>
-              <div class="checkbox">
-                <input id="c_1" required class="checkbox__input" type="checkbox" value="check" name="politics" />
-                <label for="c_1" class="checkbox__label">
-                  <span class="checkbox__text">Нажимая кнопку "Подписаться" Вы соглашаетесь с
-                    <a href="javascript:void(0);" class="checkbox__link">Политикой обработки персональных данных</a></span>
-                </label>
-              </div>
-            </form>
-          </div>
+        <div class="reviews__link-wrapper link-wrapper">
+          <button data-show-more class="reviews__link button button--secondary">
+            Читать все отзывы
+          </button>
         </div>
       </section>
-
       <section class="page__countries countries">
         <div class="countries__container container">
           <h2 class="countries__title title">Экскурсии в разных странах</h2>
