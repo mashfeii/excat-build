@@ -695,19 +695,26 @@
 }
 
 @media (any-hover: hover) {
-  .menu>ul>li>a:hover {
+  .menu>ul>li>a:hover,
+  .menu>ul>li>a:focus {
+    outline: none;
     color: var(--clr-main-blue);
   }
 
-  .search__item:hover {
+  .search__item:hover,
+  .search__item:focus {
+    outline: none;
     background-color: var(--clr-light-blue);
   }
 
-  .search__item:hover .search__item-city {
+  .search__item:hover .search__item-city,
+  .search__item:focus .search__item-city {
     color: var(--clr-main-blue);
   }
 
-  .pagination__link:hover {
+  .pagination__link:hover,
+  .pagination__link:focus {
+    outline: none;
     background-color: var(--clr-main-blue);
     color: var(--clr-white);
   }

@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <title>Экскурсии в России</title>
+  <title>Экскурсии в Москве</title>
   <meta charset="UTF-8" />
   <meta name="format-detection" content="telephone=no" />
   <link rel="stylesheet" href="assets/css/style.css?_v=20250405215219" />
@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="assets/css/slider.css?_v=20250405215219" />
   <link rel="stylesheet" href="assets/css/breadcrumb.css?_v=20250405215219" />
   <link rel="stylesheet" href="assets/css/pagination.css?_v=20250405215219" />
-  <link rel="stylesheet" href="assets/css/countries.css?_v=20250405215219" />
+  <link rel="stylesheet" href="assets/css/select.css?_v=20250405215219" />
+  <link rel="stylesheet" href="assets/css/city.css?_v=20250405215219" />
   <link rel="shortcut icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
@@ -121,16 +122,22 @@
             <meta itemprop="position" content="1" />
           </li>
           <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <span class="breadcrumb__text" aria-current="page" itemprop="name">Россия</span>
+            <a href="#" class="breadcrumb__link" itemprop="item">
+              <span itemprop="name">Россия</span>
+            </a>
             <meta itemprop="position" content="2" />
+            <meta itemprop="item" content="https://site.ru/current-page" />
+          </li>
+          <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span class="breadcrumb__text" aria-current="page" itemprop="name">Москва</span>
+            <meta itemprop="position" content="3" />
             <meta itemprop="item" content="https://site.ru/current-page" />
           </li>
         </ol>
       </nav>
-
-      <section class="page__text text text--center container">
+      <section class="page__text text text--city container">
         <h1 class="text__title main-title">
-          Экскурсии <span class="highlight">в России</span>
+          Экскурсии <span class="highlight">в Москве</span>
         </h1>
         <div class="text__body">
           <div class="text__block">
@@ -144,89 +151,104 @@
           </div>
         </div>
       </section>
-      <section class="page__mainstream mainstream">
-        <div class="mainstream__container container">
-          <h2 class="mainstream__title title">Популярные города</h2>
-          <div class="mainstream__body grid grid--quad">
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/1.webp" type="image/webp"><img src="./assets/images/mainstream/1.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Москва</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/2.webp" type="image/webp"><img src="./assets/images/mainstream/2.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Санкт-Петербург</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/3.webp" type="image/webp"><img src="./assets/images/mainstream/3.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Казань</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/4.webp" type="image/webp"><img src="./assets/images/mainstream/4.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Сочи</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/4.webp" type="image/webp"><img src="./assets/images/mainstream/4.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Сочи</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/3.webp" type="image/webp"><img src="./assets/images/mainstream/3.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Казань</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/2.webp" type="image/webp"><img src="./assets/images/mainstream/2.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Санкт-Петербург</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-            <a href="javascript:void(0);" class="mainstream__card card">
-              <div class="card__image">
-                <picture><source srcset="./assets/images/mainstream/1.webp" type="image/webp"><img src="./assets/images/mainstream/1.jpg" alt="" /></picture>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title _f-h3">Москва</h3>
-                <p class="card__text">2345 экскурсий</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="page__top top">
+      <section class="page__top top top--decor">
         <div class="top__container container">
-          <h2 class="top__title title">Топ экскурсий</h2>
+          <div class="top__locations" data-show-block="locations">
+            <button type="button" class="top__locations-button">
+              Останкинская телебашня
+            </button>
+            <button type="button" class="top__locations-button">
+              Усадьба Кусково
+            </button>
+            <button type="button" class="top__locations-button">
+              Новодевичий монастырь
+            </button>
+            <button type="button" class="top__locations-button">
+              Красная площадь
+            </button>
+            <button type="button" class="top__locations-button">
+              Кремль
+            </button>
+            <button type="button" class="top__locations-button">Метро</button>
+            <button type="button" class="top__locations-button">
+              Булгаков
+            </button>
+            <button type="button" class="top__locations-button">
+              "Красный Октябрь"
+            </button>
+            <button type="button" class="top__locations-button">
+              Обзорные
+            </button>
+            <button type="button" class="top__locations-button">
+              Мастер-классы
+            </button>
+            <button type="button" class="top__locations-button">
+              Усадьбы
+            </button>
+            <button type="button" class="top__locations-button">
+              Воробьевы горы
+            </button>
+            <button type="button" class="top__locations-button">
+              Булгаков
+            </button>
+            <button type="button" class="top__locations-button">
+              Москва-Сити
+            </button>
+            <button type="button" class="top__locations-button">
+              Поклонная гора
+            </button>
+            <button type="button" class="top__locations-button">
+              Здание МГУ
+            </button>
+            <button type="button" class="top__locations-button" hidden>
+              ВДНХ
+            </button>
+            <button type="button" class="top__locations-button" hidden>
+              Парк Горького
+            </button>
+            <button type="button" class="top__locations-button" hidden>
+              Третьяковская галерея
+            </button>
+            <button type="button" class="top__locations-button" data-show-more="locations">
+              Ещё
+            </button>
+          </div>
+          <div class="top__filters" data-one-select>
+            <div class="top__filters-block">
+              <label for="rating-select" class="top__filters-label">По рейтингу:</label>
+              <select name="form[]" class="form" id="rating-select">
+                <option value="" selected>Выберите фильтр</option>
+                <option value="2">Какой-либо фильтр</option>
+                <option value="3">Какой-либо фильтр</option>
+                <option value="4">Какой-либо фильтр</option>
+                <option value="5">Какой-либо фильтр</option>
+              </select>
+            </div>
+            <div class="top__filters-block">
+              <label for="move-select" class="top__filters-label">Тип передвижения:</label>
+              <select name="form[]" class="form" id="move-select" multiple data-checkbox>
+                <option value="" selected>Выберите фильтр</option>
+                <option value="2">Какой-либо фильтр</option>
+                <option value="3">Какой-либо фильтр</option>
+                <option value="4">Какой-либо фильтр</option>
+                <option value="5">Какой-либо фильтр</option>
+              </select>
+            </div>
+            <div class="top__filters-block">
+              <label for="from-price" class="top__filters-label">Цена:</label>
+              <div class="top__filters-price price-block">
+                <div class="price-block__item">
+                  <label for="from-price" class="price-block__label">от:</label>
+                  <input type="number" name="price from" id="from-price" placeholder="0" class="input">
+                </div>
+                <div class="price-block__item">
+                  <label for="to-price" class="price-block__label">до:</label>
+                  <input type="number" name="price to" id="to-price" placeholder="0" class="input">
+                </div>
+              </div>
+            </div>
+          </div>
+          <strong class="top__total">Всего найдено: 1234 экскурсии</strong>
           <div class="top__body grid grid--triple" data-show-block="top">
             <a href="javascript:void(0);" class="top__card top-card" itemscope itemtype="http://schema.org/Event">
               <div class="top-card__image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
@@ -1588,13 +1610,14 @@
 
       <section class="page__attractions attractions container">
         <div class="attractions__header block-header">
-          <h2 class="block-header__title title">Достопримечательности</h2>
+          <h2 class="block-header__title title">
+            Достопримечательности России
+          </h2>
           <span class="block-header__label">
             <svg class="block-header__label-icon" width="20" height="20">
               <use xlink:href="./assets/icons/icons.svg#mark" />
             </svg>
-            <span class="block-header__label-text">Лучшие и интересные места во всех городах мира с
-              фотографиями</span>
+            <span class="block-header__label-text">Подборки лучших и интересных мест в России</span>
           </span>
         </div>
         <div class="attractions__body grid grid--triple" data-show-block="attractions">
@@ -1908,60 +1931,65 @@
       </section>
 
       <section class="page__text text container">
-        <h2 class="text__title title">Все экскурсии мира в одном месте</h2>
+        <h2 class="text__title title">
+          Интересные экскурсии в Москве и необычные прогулочные маршруты
+        </h2>
         <div class="text__body">
           <div class="text__block">
             <p>
-              Каталог экскурсий excat.ru — все туристические направления земного шара
-              – самая полная база путешествий по России, Европе, Азии, Америке и
-              другим регионам мира от прямых организаторов без комиссий и наценок для
-              Вас.
+              Каталог экскурсий excat.ru — все туристические направления
+              земного шара – самая полная база путешествий по России, Европе,
+              Азии, Америке и другим регионам мира от прямых организаторов без
+              комиссий и наценок для Вас.
             </p>
             <p>
               Мы помогаем Вам найти варианты активного отдыха и увлекательных
-              экскурсий по всему земному шару согласно вашим предпочтениям. На нашем
-              сайте размещена самая полная база туров из любой точки мира - от Крыма
-              до Камчатки, от Кавказа до Северного полюса, от Альп до Анд, от Великого
-              Барьерного рифа до Антарктиды.
-            </p>
-          </div>
-          <div class="text__block">
-            Куда бы Вы ни собирались – будь то Байкал, Алтай, Карелия, Якутия, Урал,
-            Альпы, Андалусия, Мадагаскар или Галапагосские острова – с помощью Большой
-            Страны Вы найдете подходящий вид отдыха с учетом индивидуальных пожеланий,
-            бюджета и уровня физической подготовки. Просто настройте фильтры поиска,
-            даты поездки, виды отдыха и подберите свое идеальное путешествие!
-          </div>
-          <div class="text__block">
-            <p>
-              Активный отдых и увлекательные экскурсии на любой вкус Варианты туров и
-              экскурсий по всему миру многочисленны и разнообразны. Если Вас манят
-              горы, совершите восхождение на Эльбрус или отправляйтесь в конный поход
-              по Алтаю. Вам нравится водный туризм? Выберете сплав по Уралу, Кавказу
-              или Карелии, круиз по Волге или прогулку на лодке по каналам Венеции.
-              Любите движение и скорость? Отправляйтесь в велотур по Крыму летом или
-              сафари на снегоходах зимой. Ищете спокойный отдых? Пройдите по
-              треккинговым тропам Сибири, Адыгеи и Урала, прогуляйтесь по улочкам
-              Парижа или посетите музеи Лувра. Познакомьтесь с культурой и традициями
-              народов в этнотурах по Бурятии, Хакасии, Алтаю, Дальнему Востоку, Перу
-              или Танзании
+              экскурсий по всему земному шару согласно вашим предпочтениям. На
+              нашем сайте размещена самая полная база туров из любой точки
+              мира - от Крыма до Камчатки, от Кавказа до Северного полюса, от
+              Альп до Анд, от Великого Барьерного рифа до Антарктиды.
             </p>
           </div>
           <div class="text__block">
             <p>
-              А для тех, кто хочет почувствовать себя первооткрывателем, Большая
-              Страна поможет найти экспедиции в самые удаленные уголки России,
-              Антарктиду, Гренландию или Северный полюс.
+              Куда бы Вы ни собирались – будь то Байкал, Алтай, Карелия,
+              Якутия, Урал, Альпы, Андалусия, Мадагаскар или Галапагосские
+              острова – с помощью Большой Страны Вы найдете подходящий вид
+              отдыха с учетом индивидуальных пожеланий, бюджета и уровня
+              физической подготовки. Просто настройте фильтры поиска, даты
+              поездки, виды отдыха и подберите свое идеальное путешествие!
+            </p>
+          </div>
+          <div class="text__block">
+            <p>
+              Активный отдых и увлекательные экскурсии на любой вкус Варианты
+              туров и экскурсий по всему миру многочисленны и разнообразны.
+              Если Вас манят горы, совершите восхождение на Эльбрус или
+              отправляйтесь в конный поход по Алтаю. Вам нравится водный
+              туризм? Выберете сплав по Уралу, Кавказу или Карелии, круиз по
+              Волге или прогулку на лодке по каналам Венеции. Любите движение
+              и скорость? Отправляйтесь в велотур по Крыму летом или сафари на
+              снегоходах зимой. Ищете спокойный отдых? Пройдите по
+              треккинговым тропам Сибири, Адыгеи и Урала, прогуляйтесь по
+              улочкам Парижа или посетите музеи Лувра. Познакомьтесь с
+              культурой и традициями народов в этнотурах по Бурятии, Хакасии,
+              Алтаю, Дальнему Востоку, Перу или Танзании
+            </p>
+          </div>
+          <div class="text__block">
+            <p>
+              А для тех, кто хочет почувствовать себя первооткрывателем,
+              Большая Страна поможет найти экспедиции в самые удаленные уголки
+              России, Антарктиду, Гренландию или Северный полюс.
             </p>
             <p>
-              Для желающих попробовать все и сразу существуют комбинированные туры,
-              сочетающие в себе сплавы, конные походы, восхождения, велотуры,
-              экскурсии и многое другое.
+              Для желающих попробовать все и сразу существуют комбинированные
+              туры, сочетающие в себе сплавы, конные походы, восхождения,
+              велотуры, экскурсии и многое другое.
             </p>
           </div>
         </div>
       </section>
-
     </main>
     <footer class="footer">
       <div class="footer__container container">
@@ -2051,8 +2079,8 @@
   </div>
   <script src="assets/js/header.js?_v=20250405215219"></script>
   <script src="assets/js/sliders.js?_v=20250405215219"></script>
+  <script src="assets/js/select.js?_v=20250405215219"></script>
   <script src="assets/js/app.js?_v=20250405215219"></script>
-
 </body>
 
 </html>

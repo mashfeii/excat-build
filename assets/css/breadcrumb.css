@@ -109,25 +109,25 @@
 }
 
 @supports (margin-top: clamp( 1.875rem , 1.2980769231rem  +  2.8846153846vw , 3.75rem )) {
-  .breadcrumb {
+  .page__breadcrumb {
     margin-top: clamp( 1.875rem , 1.2980769231rem  +  2.8846153846vw , 3.75rem );
   }
 }
 
 @supports not (margin-top: clamp( 1.875rem , 1.2980769231rem  +  2.8846153846vw , 3.75rem )) {
-  .breadcrumb {
+  .page__breadcrumb {
     margin-top: calc(1.875rem + 1.875*(100vw - 20rem)/65);
   }
 }
 
 @supports (margin-bottom: clamp( 1.875rem , 1.2980769231rem  +  2.8846153846vw , 3.75rem )) {
-  .breadcrumb {
+  .page__breadcrumb {
     margin-bottom: clamp( 1.875rem , 1.2980769231rem  +  2.8846153846vw , 3.75rem );
   }
 }
 
 @supports not (margin-bottom: clamp( 1.875rem , 1.2980769231rem  +  2.8846153846vw , 3.75rem )) {
-  .breadcrumb {
+  .page__breadcrumb {
     margin-bottom: calc(1.875rem + 1.875*(100vw - 20rem)/65);
   }
 }
